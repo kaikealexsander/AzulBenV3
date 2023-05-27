@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kabromtech.azulbenv3">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/ic_azulbem_logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_azulbem_logo_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name="com.kabromtech.azulbenv3.KnowMoreCompanyActivity"></activity>
+        <activity android:name="com.kabromtech.azulbenv3.KnowMoreSyndicateActivity" />
+        <activity android:name="com.kabromtech.azulbenv3.AdapterCity$KnowMoreSyndicateActivity" />
+        <activity
+            android:name="com.kabromtech.azulbenv3.PromotionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.kabromtech.azulbenv3.CompanyActivity" />
+        <activity android:name="com.kabromtech.azulbenv3.CityActivity" />
+        <activity android:name="com.kabromtech.azulbenv3.SyndicateActivity" />
+        <activity
+            android:name="com.kabromtech.azulbenv3.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kabromtech.azulbenv3.WorkingAreaActivity"
+            android:parentActivityName="com.kabromtech.azulbenv3.SyndicateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

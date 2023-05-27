@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/location"
+        android:title="@string/locale"
+        android:icon="@drawable/ic_location_on_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/syndicate"
+        android:title="@string/syndicate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_info_outline_white_24dp"
+        app:showAsAction="never" />
+</menu>

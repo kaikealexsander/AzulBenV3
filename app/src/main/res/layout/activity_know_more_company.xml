@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kabromtech.azulbenv3.KnowMoreCompanyActivity">
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_whats"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="Whatsapp"
+                android:textSize="9dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:drawableTop="@drawable/ic_whatsapp_white_logo" />
+
+            <Button
+                android:id="@+id/btn_cellphone"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="Ligar"
+                android:textSize="9dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:drawableTop="@drawable/ic_smartphone_white_24dp" />
+
+            <Button
+                android:id="@+id/btn_phone"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="Ligar"
+                android:textSize="9dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:drawableTop="@drawable/ic_local_phone_white_24dp" />
+
+            <Button
+                android:id="@+id/btn_locale"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="Localização"
+                android:textSize="9dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:drawableTop="@drawable/ic_location_on_white_24dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+
+            <com.kabromtech.azulbenv3.ProportionalImageView
+                android:id="@+id/image_view_synd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_face"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_facebook"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_facebook_white" />
+
+                <ImageButton
+                    android:id="@+id/btn_yout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_youtube"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_youtube_white" />
+
+                <ImageButton
+                    android:id="@+id/btn_insta"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_instagram"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_instagram_white" />
+
+                <ImageButton
+                    android:id="@+id/btn_twit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_twitter"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_twitter_white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_short_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

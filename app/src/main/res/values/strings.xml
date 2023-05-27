@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Azul Bem</string>
+    <string name="slogan">Mundo de Benefício</string>
+    <string name="version">v 1.5</string>
+    <string name="locale">Localização</string>
+    <string name="syndicate">Sindicatos</string>
+    <string name="about">Sobre</string>
+    <string name="workingarea">Áreas de Atuação</string>
+    <string name="promotion">Promoções</string>
+    <string name="back">Voltar</string>
+</resources>
